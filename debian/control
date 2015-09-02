@@ -1,0 +1,15 @@
+Source: puppetboard
+Section: admin
+Priority: optional
+Maintainer: Vincent Bernat <bernat@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-virtualenv,
+               python
+Standards-Version: 3.9.6
+
+Package: puppetboard
+Architecture: all
+Depends: ${python:Depends}
+Description: web frontend for PuppetDB
+ Puppetboard is a web interface to PuppetDB aiming to replace the
+ reporting functionality of Puppet Dashboard.
