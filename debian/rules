@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+export PATH=/usr/local/bin:$(PATH)
+
 %:
 	dh $@ --with python-virtualenv
 
