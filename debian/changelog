@@ -1,3 +1,9 @@
+puppetboard (0.0.4+git20150902-0~precise0+exo2) precise; urgency=medium
+
+  * Filter out lab machines from overview.
+
+ -- Benoit Capitanio <benoit@exoscale.ch>  Fri, 28 Jul 2017 10:33:33 +0200
+
 puppetboard (0.0.4+git20150902-0~precise0+exo1) precise; urgency=medium
 
   * Initial packaging for Precise.

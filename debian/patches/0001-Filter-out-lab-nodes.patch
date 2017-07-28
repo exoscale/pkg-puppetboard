@@ -1,0 +1,33 @@
+From 922d06095ee49986ff595a40d05b7b1c16cbb4e0 Mon Sep 17 00:00:00 2001
+From: Benoit Capitanio <benoit.capitanio@gmail.com>
+Date: Fri, 28 Jul 2017 10:22:51 +0200
+Subject: [PATCH] Filter out lab nodes.
+
+---
+ puppetboard/app.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/puppetboard/app.py b/puppetboard/app.py
+index 64d5526..1de4254 100644
+--- a/puppetboard/app.py
++++ b/puppetboard/app.py
+@@ -3,6 +3,7 @@ from __future__ import absolute_import
+ 
+ import logging
+ import collections
++import re
+ try:
+     from urllib import unquote
+ except ImportError:
+@@ -132,6 +133,8 @@ def index():
+         }
+ 
+     for node in nodes:
++        if re.match(r'.*-lab[0-9]+\..*', node.name):
++	    continue
+         if node.status == 'unreported':
+             stats['unreported'] += 1
+         elif node.status == 'changed':
+-- 
+2.13.2
+
