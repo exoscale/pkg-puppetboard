@@ -5,4 +5,4 @@
 
 
 override_dh_virtualenv:
-	env PATH=/usr/local/bin:$$PATH dh_virtualenv --preinstall=gunicorn
+	dh_virtualenv --preinstall=gunicorn
