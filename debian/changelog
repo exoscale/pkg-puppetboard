@@ -1,3 +1,9 @@
+puppetboard (0.0.4+git20150902-0~xenial0+exo3) xenial; urgency=medium
+
+  * Forward-port to Xenial.
+
+ -- Vincent Bernat <bernat@debian.org>  Tue, 19 Dec 2017 13:15:01 +0100
+
 puppetboard (0.0.4+git20150902-0~precise0+exo3) precise; urgency=medium
 
   * Switch to 3.0 (quilt) format.
