@@ -1,3 +1,10 @@
+puppetboard (0.0.4+git20150902-0~xenial0+exo4) xenial; urgency=medium
+
+  * Ensure installation is always done in
+    /usr/share/python/virtualenv/puppetboard.
+
+ -- Vincent Bernat <bernat@debian.org>  Wed, 28 Feb 2018 16:43:18 +0100
+
 puppetboard (0.0.4+git20150902-0~xenial0+exo3) xenial; urgency=medium
 
   * Forward-port to Xenial.
